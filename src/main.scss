@@ -1,0 +1,9 @@
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+@import 'variables';
+@import './wordcloud/style';
+
+body {
+  margin: 0;
+}

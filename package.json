@@ -1,0 +1,52 @@
+{
+  "name": "wordcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Fitter <hello@joefitter.com> (http://joefitter.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babelify": "^6.4.0",
+    "browser-sync": "^2.9.11",
+    "browserify": "^12.0.0",
+    "chai": "^3.4.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^4.0.3",
+    "hbsfy": "^2.4.1",
+    "jsdom": "^2.0.0",
+    "jshint-stylish": "^2.1.0",
+    "lodash": "^3.10.1",
+    "proxyquire": "^1.7.3",
+    "require-dir": "^0.3.0",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.5.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "d3": "^3.5.9",
+    "d3-cloud": "^1.2.1",
+    "nprogress": "^0.2.0",
+    "orchestra": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "hbsfy"
+    ]
+  }
+}
