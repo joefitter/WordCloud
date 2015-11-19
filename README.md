@@ -1,6 +1,6 @@
-# WordCloud
+#WordCloud [![Build Status](https://travis-ci.org/joefitter/backbone-tooltip.svg?branch=master)](https://travis-ci.org/joefitter/backbone-tooltip)
 
-A single page application written using [Orchestra][https://www.npmjs.com/package/orchestra].
+> A single page application written using [Orchestra][https://www.npmjs.com/package/orchestra].
 
 ## Installation
 
