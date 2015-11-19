@@ -5,7 +5,7 @@ import sass from 'gulp-sass';
 import { sass as config } from '../config';
 import { reload } from 'browser-sync';
 
-gulp.task('copy-styles', ['clean'], () => {
+gulp.task('copy-styles', () => {
   return gulp.src('./src/*.css')
     .pipe(gulp.dest('./dist'));
 });

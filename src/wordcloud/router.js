@@ -6,6 +6,7 @@ import Topics from './topics';
 
 export default Router.extend({
   routes: {
+    '': 'index',
     topics: 'index',
     'topics/:id': 'index'
   },

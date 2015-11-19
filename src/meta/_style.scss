@@ -1,0 +1,26 @@
+#meta {
+  .panel {
+    display: none;
+    
+    h4 {
+      span {
+        display: inline-block;
+      }
+    }
+
+    dl {
+      dd {
+        text-align: right;
+        color: $grey;
+
+        &[data-ref="positive"] {
+          color: $green
+        }
+
+        &[data-ref="negative"] {
+          color: $red
+        }
+      }
+    }
+  }
+}

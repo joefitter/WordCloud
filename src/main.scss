@@ -3,7 +3,9 @@
 
 @import 'variables';
 @import './wordcloud/style';
+@import './meta/style';
 
 body {
   margin: 0;
+  background-color: $lightGrey;
 }

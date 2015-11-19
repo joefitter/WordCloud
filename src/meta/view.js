@@ -18,6 +18,7 @@ export default ItemView.extend({
 
   onShow() {
     this.stickit();
+    this.$el.fadeIn();
   },
 
   onDestroy() {
