@@ -2,19 +2,18 @@
 
 import gulp from 'gulp';
 import sass from 'gulp-sass';
+import sourcemaps from 'gulp-sourcemaps';
 import { sass as config } from '../config';
 import { reload } from 'browser-sync';
 
-gulp.task('copy-styles', () => {
-  return gulp.src('./src/*.css')
-    .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('styles', ['copy-styles', 'sass']);
+gulp.task('styles', ['sass']);
 
 gulp.task('sass', () => {
   gulp.src(config.src)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'})
+      .on('error', sass.logError))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.dest))
     .pipe(reload({ stream: true }));
 });

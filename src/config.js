@@ -5,6 +5,11 @@ export default {
     location: '#app'
   },
   wordcloud: {
+    width: 800,
+    height: 600,
+    padding: 5,
+    minFontSize: 10,
+    maxFontSize: 60,
     colours: {
       red: '#e74c3c',
       green: '#27ae60',
