@@ -12,12 +12,18 @@ export default Router.extend({
   },
 
   initialize(options = {}) {
+
+    // instance of Marionette.Region
     this.container = options.container;
+
+    // obj
     this.config = options.config;
     this.topics = new Topics();
   },
 
   index(id) {
+
+    // if already loaded index route and word cloud
     if (this.indexRoute) {
       this.indexRoute.showItem(id);
     } else {

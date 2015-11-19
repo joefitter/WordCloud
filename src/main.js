@@ -8,9 +8,7 @@ import WordcloudRouter from './wordcloud/router';
 
 import MetaService from './meta/service';
 
-const app = new Application({
-  config: config.app
-});
+const app = new Application();
 
 MetaService.setup({
   container: app.layout.meta
@@ -21,6 +19,8 @@ app.wordcloud = new WordcloudRouter({
   config: config.wordcloud
 });
 
+// display errors
 app.wordcloud.on('error', (router, err) => console.error(err));
 
+// start router(s)
 history.start();

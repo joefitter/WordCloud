@@ -11,6 +11,8 @@ export default Collection.extend({
   comparator: 'sentimentScore',
 
   parse(data) {
+
+    // data is contained within `topics`
     return data.topics;
   }
 });

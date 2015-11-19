@@ -41,6 +41,7 @@ let viewProps = {
         };
       }))
       .padding(this.config.padding)
+
       // 0 or 90
       .rotate(() => Math.floor(Math.random() * 2) * 90)
       .fontSize(model => model.size)
@@ -49,6 +50,7 @@ let viewProps = {
   },
 
   draw(words) {
+    // move group into middle
     this.$el.attr('transform', `translate(${this.layout.size()[0] / 2}, ${this.layout.size()[1] / 2})`);
 
     _.each(words, word => {

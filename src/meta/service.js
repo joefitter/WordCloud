@@ -7,6 +7,8 @@ import Model from '../wordcloud/topic';
 const MetaService = Service.extend({
 
   setup(options = {}) {
+
+    // instance of Marionette.Region
     this.container = options.container;
   },
 
@@ -22,6 +24,8 @@ const MetaService = Service.extend({
   },
 
   display(model) {
+
+    // Update the view.model values with new passed model data.
     const viewModel = this.container.currentView.model;
     model = model.toJSON();
 

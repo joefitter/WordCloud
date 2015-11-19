@@ -9,15 +9,7 @@ describe('application/layout-view', function() {
 
   describe('#initialize', function() {
     beforeEach(function() {
-      this.view.initialize({
-        config: {
-          el: 'test'
-        }
-      });
-    });
-
-    it('should create set an el property', function() {
-      expect(this.view).to.have.property('el', 'test');
+      this.view.initialize();
     });
 
     it('should have set up a wordcloud region', function() {

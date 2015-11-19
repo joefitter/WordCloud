@@ -2,6 +2,12 @@
 
 import { _ } from 'orchestra';
 
+/**
+ * This mixin is needed in order for SVG elements to be used
+ * as the root element in a Marionette/Backbone View.
+ * Backbone.View._ensureElement doesn't include the namespacing
+ * necessary for rendering SVG elements
+ **/
 export default {
 
   namespace: 'http://www.w3.org/2000/svg',

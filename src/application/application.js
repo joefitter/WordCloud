@@ -4,10 +4,10 @@ import { Application } from 'orchestra';
 import LayoutView from './layout-view';
 
 export default Application.extend({
-  initialize(options = {}) {
-    this.layout = new LayoutView({
-      config: options.config
-    });
+  initialize() {
+    this.layout = new LayoutView();
+
+    // render the layout to init component regions
     this.layout.render();
   }
 });

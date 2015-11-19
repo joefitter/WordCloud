@@ -12,6 +12,8 @@ export default Model.extend({
   },
 
   parse(data) {
+
+    // set sentiment values directly
     for (var key in data.sentiment) {
       if (data.sentiment.hasOwnProperty(key)) {
         data[key] = data.sentiment[key];

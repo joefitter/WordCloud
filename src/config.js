@@ -1,9 +1,6 @@
 'use strict';
 
 export default {
-  app: {
-    location: '#app'
-  },
   wordcloud: {
     width: 800,
     height: 600,
