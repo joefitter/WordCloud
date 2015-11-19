@@ -29,7 +29,11 @@ function bundle(cb, watch) {
     .pipe(reload({ stream: true }));
 }
 
-gulp.task('scripts', cb => {
-  process.env.BROWSERIFYSWAP_ENV = 'dist';
-  bundle(cb, true);
+gulp.task('scripts', (cb, something) => {
+  let watch = false;
+  if (process.env.BROWSERIFYSWAP_ENV === 'dev') {
+    watch = true
+  }
+
+  bundle(cb, watch);
 });

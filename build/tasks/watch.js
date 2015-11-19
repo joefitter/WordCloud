@@ -5,7 +5,12 @@ import browserSync from 'browser-sync';
 import { watch as config } from '../config';
 import bundler from '../helpers/bundler';
 
-gulp.task('watch', ['build'], cb => {
+gulp.task('setEnvToDev', cb => {
+  process.env.BROWSERIFYSWAP_ENV = 'dev';
+  cb();
+});
+
+gulp.task('watch', ['setEnvToDev', 'build'], cb => {
   browserSync({
     server: {
       baseDir: 'dist'

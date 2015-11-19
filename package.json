@@ -44,6 +44,7 @@
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "vinyl-buffer": "^1.0.0",
+    "vinyl-ftp": "^0.4.5",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.5.0"
   },
