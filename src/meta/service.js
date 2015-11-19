@@ -19,6 +19,11 @@ const MetaService = Service.extend({
     display: 'display'
   },
 
+  /**
+   * Start is called on the first request
+   * received before the request method
+   * is executed
+   **/
   start() {
     const view = new View({
       model: new Model()
