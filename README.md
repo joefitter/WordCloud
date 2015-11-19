@@ -1,6 +1,6 @@
 #WordCloud [![Build Status](https://travis-ci.org/joefitter/WordCloud.svg?branch=master)](https://travis-ci.org/joefitter/WordCloud)
 
-> A single page application written using [Orchestra]https://www.npmjs.com/package/orchestra).
+> A single page application written using [Orchestra](https://www.npmjs.com/package/orchestra).
 
 ## Installation
 
@@ -21,6 +21,6 @@
 
 ## Included Libraries
 
-1. [Orchestra][https://www.npmjs.com/package/orchestra]
-2. [Browserify][https://www.npmjs.com/package/browserify]
-3. [Babel][https://github.com/babel/babel]
+1. [Orchestra](https://www.npmjs.com/package/orchestra)
+2. [Browserify](https://www.npmjs.com/package/browserify)
+3. [Babel](https://github.com/babel/babel)
