@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/application/application.js
+//
 'use strict';
 
 import { Application } from 'orchestra';

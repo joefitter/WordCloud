@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/config.js
+//
 'use strict';
 
 export default {

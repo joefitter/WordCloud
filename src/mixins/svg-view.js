@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/mixins/svg-view.js
+//
 'use strict';
 
 import { _ } from 'orchestra';

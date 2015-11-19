@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/mixins/svg-view-spec.js
+//
 'use strict';
 
 describe('mixins/svg-view', function() {

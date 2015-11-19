@@ -1,8 +1,12 @@
+//
+// #wordcloud/src/wordcloud/route.js
+//
 'use strict';
 
 import { Route, history } from 'orchestra';
 import TopicsView from './collection-view';
 import MetaService from '../meta/service';
+import nprogress from 'nprogress';
 
 export default Route.extend({
   initialize(options = {}) {
@@ -40,10 +44,12 @@ export default Route.extend({
   },
 
   fetch() {
+    nprogress.start();
 
     // show meta on collection updated if id is set
     this.collection.fetch()
       .done(() => {
+        nprogress.done();
         if (this.id) {
           this.showMeta(this.id);
         }

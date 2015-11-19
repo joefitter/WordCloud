@@ -1,5 +1,9 @@
+//
+// #wordcloud/test/setup/node.js
+//
 'use strict';
 
+// Set up JSDom for browser like environment in node
 if (!global.document || !global.window) {
   require('babel/register');
 
@@ -17,7 +21,10 @@ if (!global.document || !global.window) {
   global.location = global.window.location;
 }
 
+// proxyquire to be used to stub dependencies.
 var proxyquire = require('proxyquire').noCallThru();
+
+// testing framework
 var sinon = require('sinon');
 var chai = require('chai');
 var sinonChai = require('sinon-chai');

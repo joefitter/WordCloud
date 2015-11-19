@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/application/application-spec.js
+//
 'use strict';
 
 describe('application/application', function() {
@@ -22,7 +25,7 @@ describe('application/application', function() {
       expect(this.module).to.have.property('layout', this.layoutView);
     });
 
-    it('shoudl have called render', function() {
+    it('should have called render', function() {
       expect(this.layoutView.render).to.have.been.calledTwice;
     });
   });

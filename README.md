@@ -24,3 +24,5 @@
 1. [Orchestra](https://www.npmjs.com/package/orchestra)
 2. [Browserify](https://www.npmjs.com/package/browserify)
 3. [Babel](https://github.com/babel/babel)
+4. [D3](https://github.com/mbostock/d3)
+5. [D3-Cloud](https://github.com/jasondavies/d3-cloud)

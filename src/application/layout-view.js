@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/application/layout-view.js
+//
 'use strict';
 
 import { LayoutView } from 'orchestra';

@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/wordcount/collection-view-spec.js
+//
 'use strict';
 
 describe('wordcloud/collection-view', function() {

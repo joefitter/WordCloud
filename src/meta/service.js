@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/meta/service.js
+//
 'use strict';
 
 import { Service } from 'orchestra';

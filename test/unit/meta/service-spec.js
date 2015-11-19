@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/meta/service-spec.js
+//
 'use strict';
 
 describe('meta/service', function() {

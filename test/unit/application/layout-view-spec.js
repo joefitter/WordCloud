@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/application/layout-view-spec.js
+//
 'use strict';
 
 describe('application/layout-view', function() {

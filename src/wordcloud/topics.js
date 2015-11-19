@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/wordcloud/topics.js
+//
 'use strict';
 
 import { Collection } from 'orchestra';

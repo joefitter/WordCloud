@@ -1,3 +1,6 @@
+//
+// #wordcloud/test/unit/meta/view-spec.js
+//
 'use strict';
 
 describe('meta/view', function() {

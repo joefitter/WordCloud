@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/main.js
+//
 'use strict';
 
 import { history } from 'orchestra';
@@ -8,6 +11,11 @@ import WordcloudRouter from './wordcloud/router';
 
 import MetaService from './meta/service';
 
+/**
+ *  This file is the entry point. It instantiates
+ *  a new application, any routers, and sets up
+ *  any services
+ **/
 const app = new Application();
 
 MetaService.setup({

@@ -1,3 +1,6 @@
+//
+// #wordcloud/src/wordcloud/item-view.js
+//
 'use strict';
 
 import { _, ItemView } from 'orchestra';
