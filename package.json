@@ -1,13 +1,23 @@
 {
   "name": "wordcloud",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joe Fitter <hello@joefitter.com> (http://joefitter.com/)",
   "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joefitter/WordCloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joefitter/WordCloud/issues"
+  },
+  "homepage": "https://github.com/joefitter/WordCloud",
   "devDependencies": {
     "babel": "^5.8.29",
     "babelify": "^6.4.0",

@@ -23,7 +23,7 @@ describe('application/application', function() {
     });
 
     it('shoudl have called render', function() {
-      expect(this.layoutView.render).to.have.been.calledTwice
-    })
+      expect(this.layoutView.render).to.have.been.calledTwice;
+    });
   });
 });

@@ -30,7 +30,7 @@ describe('meta/service', function() {
 
     describe('#start', function() {
       beforeEach(function() {
-        this.service.start()
+        this.service.start();
       });
 
       it('should have called show on the container', function() {

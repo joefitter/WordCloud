@@ -4,7 +4,7 @@ import { _ } from 'orchestra';
 
 export default {
 
-  nameSpace: 'http://www.w3.org/2000/svg',
+  namespace: 'http://www.w3.org/2000/svg',
 
   _ensureElement() {
     if (!this.el) {
@@ -18,7 +18,7 @@ export default {
         attrs['class'] = _.result(this, 'className');
       }
 
-      const el = window.document.createElementNS(_.result(this, 'nameSpace'), _.result(this, 'tagName'));
+      const el = window.document.createElementNS(_.result(this, 'namespace'), _.result(this, 'tagName'));
 
       _.each(attrs, (value, key) => el.setAttributeNS(null, key, value));
 

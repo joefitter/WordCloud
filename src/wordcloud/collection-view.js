@@ -29,8 +29,6 @@ let viewProps = {
         return {
           model,
           text: model.get('label'),
-
-          // 
           size: Math.pow(model.get('sentimentScore'), 0.8)
         };
       }))
@@ -48,7 +46,7 @@ let viewProps = {
       const view = this.children.findByModel(word.model);
       const $el = view.$el;
       $el.css('font-size', `${word.size}px`)
-      .attr('transform', `translate(${word.x}, ${word.y})rotate(${word.rotate})`);
+        .attr('transform', `translate(${word.x}, ${word.y})rotate(${word.rotate})`);
     });
   }
 };

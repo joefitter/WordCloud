@@ -12,9 +12,7 @@
     "stub"       : true,
     "spy"        : true,
     "_"          : true,
-    "Backbone"   : true,
-    "Marionette" : true,
-    "$"          : true
+    "Orchestra"  : true
   },
 
   "predef": ["-Promise"],

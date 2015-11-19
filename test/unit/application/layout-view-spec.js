@@ -4,12 +4,12 @@ describe('application/layout-view', function() {
   beforeEach(function() {
     this.Controller = proxyquire('../../src/application/layout-view.js', {});
 
-    this.module = new this.Controller();
+    this.view = new this.Controller();
   });
 
   describe('#initialize', function() {
     beforeEach(function() {
-      this.module.initialize({
+      this.view.initialize({
         config: {
           el: 'test'
         }
@@ -17,15 +17,15 @@ describe('application/layout-view', function() {
     });
 
     it('should create set an el property', function() {
-      expect(this.module).to.have.property('el', 'test');
+      expect(this.view).to.have.property('el', 'test');
     });
 
     it('should have set up a wordcloud region', function() {
-      expect(this.module).to.have.property('wordcloud');
+      expect(this.view).to.have.property('wordcloud');
     });
 
     it('should have set up a meta region', function() {
-      expect(this.module).to.have.property('meta');
+      expect(this.view).to.have.property('meta');
     });
   });
 });
